@@ -1,0 +1,9 @@
+services:
+  latex:
+    build: .
+    container_name: latex_compiler
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    stdin_open: true
+    tty: true

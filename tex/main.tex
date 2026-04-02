@@ -1,0 +1,39 @@
+\documentclass[a4paper, table]{article}
+\input{General/Preamble} % Loads in the preamble 
+\input{General/Settings} % Loads in user defined settings
+\begin{document}
+
+% Inserts the front page
+\input{Chapters/frontpage}
+\newpage
+
+% Generates a ToC without page number
+{\hypersetup{linkcolor=black} % Keeps the ToC black even with non-black linkcolor
+\tableofcontents\thispagestyle{empty}}
+\newpage
+
+% Contents
+\input{Chapters/introduction}
+\input{Chapters/economy}
+\input{Chapters/social}
+\input{Chapters/population}
+\input{Chapters/geography}
+\input{Chapters/languages}
+\input{Chapters/path_to_citizenship}
+\input{Chapters/climate}
+\input{Chapters/health_care}
+\input{Chapters/summary}
+
+% Creates references using the Biblatex 
+\bibliographystyle{plain}
+\bibliography{General/References.bib}
+\newpage
+
+% Any section after this command will have a letter as an index
+\appendix 
+
+% Adds an appendix entry
+% \input{Chapters/A. Appendix A}
+\newpage
+
+\end{document}
