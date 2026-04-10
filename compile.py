@@ -24,16 +24,25 @@ COLOR_YELLOW: Final[str] = "\033[1m\033[38;2;250;208;44m"
 def run_command(cmd: List[str]) -> subprocess.CompletedProcess[str]:
     """Run a shell command and return completed process."""
     cmd = " && ".join(cmd)
-    return subprocess.run(cmd, shell=True, check=True, text=True, executable="/bin/bash", capture_output=True)
+    return subprocess.run(
+        cmd, shell=True, text=True, executable="/bin/bash", capture_output=True
+    )
 
 
 def compile_pdf() -> subprocess.CompletedProcess[str]:
-    return run_command(
+    result = run_command(
         [
             f"cd {FOLDER}",
             f"pdflatex -shell-escape -halt-on-error -jobname={OUT} {TARGET}.tex",
         ]
     )
+
+    if result.returncode != 0:
+        raise RuntimeError(
+            f"Failed to compile pdf:\n {result.stdout}\n\n{result.stderr}"
+        )
+
+    return result
 
 
 def clean() -> None:

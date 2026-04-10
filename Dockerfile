@@ -18,6 +18,7 @@ RUN groupadd --gid $USER_GID $USERNAME && \
 RUN apt-get update && apt-get install -y \
     texlive-latex-extra texlive-latex-recommended \
     texlive-fonts-recommended texlive-fonts-extra  \
+    texlive-lang-european \
     git \
     python3 \
     python3-pip \
