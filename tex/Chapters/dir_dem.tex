@@ -1,2 +1,238 @@
 \section{Direkt Demokrácia}
 
+Az előző fejezetek élesen kritizáltak a jelenlegi rendszert, de nem ajánlottak
+alternatívákat. Azonban a demokráciának rengeteg formája létezik. Az, hogy ezek
+nem ismertek nem meglepő, egy olyan oktatási rendszerben ami igyekszik megtaníti
+a fiatalokat mit gondoljanak, ahelyett hogy azt tanítaná, hogyan gondolkodjanak.
+
+A teljes átláthatóság érdekében, ebben a fejezetben felsoroljuk ezen alternatívákat,
+majd röviden megvitatjuk, hogy miert nem ezek mellett érvel ez a cikk, ezután
+bemutásra kerül a direkt demokrácia egy formája, végezetül pedig útmutatást biztosítunk,
+ezen rendszer megvalósításához a gyakorlatban. Az olvasóra bízzuk, hogy elfogadja az
+érveinket vagy a felsorolt alternatívákat közül egy másikat válasszon és dolgozzon
+azon rendszer implementálásán.
+
+A következőkben felsorolunk néhány népszerű demokratikus alternatívát. Habár ezen
+rendszerek megoldást kínálnak megannyi problémára a képviseleti demokráciában,
+véleményünk szerint egyik sem ideális választás a jelenlegi helyzetben. Néhány
+esetben ennek oka, hogy a rendszer túlságosan különböző a jelenlegitől, emiatt
+a megvalosítása nehézkes lenne. Más esetben az alternatíva azt a veszélyes hitet
+népszerűsíti, hogy elég valaki másra bízni életünk legfontosabb kérdéseit, ha
+jól választunk akkor jó döntések fognak születni. Véleményünk szerint ez a
+legveszélyesebb gondolat a modern világban. Az ötlet, hogy egy idegen --- legyen
+akármilyen képzett --- képes mindenki számára megfelelő döntést hozni egy abszordum,
+de minimum az indoka a világ jelenlegi helyzetének. A jó képviselet egyetlen 
+garanciája, önképviselet:
+
+\begin{itemize}
+    \item \textbf{Lotokrácia / Sorshúzásos Demokrácia}
+    \cite{lottery_dem_1, lottery_dem_2, lottery_dem_3}: választások helyett, 
+    sorsúzással választja ki a képviselőket. Tehát a törvénykezést egy véletlenszerűen
+    választott polgári csoport végzi. Ezt a csoportot újra sorolják néhány évente.
+    Előnye, hogy sokkal jobban reprezentálja a társadalmat, hiszen nem csak azok
+    kerülhetnek döntési pozicióba akiknek ideje, pénze, és errőforrása engedi.
+    Továbbá csökkenti a korrupciót és megakadályozza, hogy a politika elitek játékává válljon.
+
+    \item \textbf{Folyékony Demokrácia} \cite{liquid_dem_1, liquid_dem_2}: esetében a
+    polgárok szavazhatnak közvetlenül előterjesztésekre vagy átruházhatják szavazati jogukat
+    egy általuk megbízhatónak vélt félre. Ez egy olyan rugalmas rendszert hoz létre, ahol
+    a befolyás folyamatosan áramlik a legmegbízhatóbb emberek felé. Ezen demokrácia igyekszik
+    lépést tartani az állandóan változó világgal és lehetővé teszi, hogy polgárok dinamikusan
+    fektessék különböző szakértőkbe a bizalmukat, attól függően, hogy kiben bíznak az adott
+    előterjesztéssel kapcsolatban a legjobban.
+
+    \item \textbf{Modern Közvetlen Demokrácia} \cite{direct_dem_1}: a polgárok a törvénykezést
+    közvetlenül végzik modern eszközök, mint az internet segítségével. Nincsenek választások
+    vagy közvetítők, a demokrácia folytonos és minden döntés a többség akaratával születik.
+
+\end{itemize}
+
+A feljebb említett definíciókból látszik, hogy a közvetlen demokrácia nem egyetlen rendszerre
+utal, hanem sokkal inkább egy gyűjtőfogalom, ami különböző demokratikus rendszereket foglal
+magába. A következő fejezetben a közvetlen demokrácia egy formája mellett fogunk érvelni,
+ami egyszerre megvalósítható és orvosolni tudja a jelenlegi rendszer problémáit.
+
+\subsection{Fakultatív Közvetlen Demokrácia}
+
+A fakultatív közvetlen demokrácia egy olyan rendszer melyben a polgároknak lehetőségük van
+minden előterjesztésre szavazni és sajátot alkotni, azonban konzenszus hiányában a
+döntéshozás a megválasztott képviselők feladata. A rendszer "fakultatív", hiszen nem hárítja
+a polgárokra a törvénykezés terhét, csupán teret ad a részvételhez. Azonban "közvetlen"
+abban az értelemben, hogy a többségi akart nem másítható meg egyetlen politikus által sem,
+legyen bármilyen pozícióban is.
+
+A gyakorlatban egy telefonos applikáció használható arra, hogy a polgárok gyorsan kifejezzék
+véleményük egy adott előterjesztéssel kapcsolatban. Fontos, hogy ez az applikáció a kormány
+által támogatott legyen, de egy non-profit szervezet végezze a fejlesztését és hogy a 
+program kód teljesen nyílt forrású legyen, ezzel garantálva a maximális átláthatóságot.
+
+Ennek a rendszernek megannyi előny lenne, itt van néhány a teljesség igénye nélkül:
+\begin{itemize}
+    \item Növeli az állampolgárok közvetlen részvételét a döntéshozatalban.
+
+    \item Erősíti a demokratikus legitimitást, mivel a döntések közvetlenül a nép akaratát
+    tükrözik.
+
+    \item Csökkenti a politikai elit és a közvetítők szerepét.
+
+    \item Fokozza az állampolgári felelősségérzetet és politikai tudatosságot.
+
+    \item Lehetővé teszi a gyorsabb reakciót társadalmi problémákra.
+
+    \item Növeli az átláthatóságot a döntéshozatali folyamatban.
+
+    \item Elősegíti a közérdek érvényesülését a pártérdekekkel szemben.
+
+    \item Minimalizálja a korrupciót, hiszen a többségi akarat gátat szabhat a nem legitim
+    intézkedéseknek.
+    
+    \item Segíti a képviselőket, mert valósidejű és pontos információt biztosít a népakaratról.
+\end{itemize}
+
+Azonban megannyi kritika is felmerülhet a rendszerrel kapcsolatban, ezért fontos hogy a leggyakoribbakat
+megválaszoljuk:
+
+\begin{enumerate}
+
+    \item \textbf{Az embereknek nincs idejük a politikára.} Szóval vezessük be a 32-órás munkahetet változatlan
+    bérekkel. Ezáltal ez embereknek több idejük lesz az életüket szabályozó döntésekre. A 32-órás munkahét egy
+    tökéletes példa valamire, ami sosem kerülhet bevezetésre a jelenlegi rendszerben. Annak ellenére, hogy
+    rengeteg tanulmány kimutatta\cite{32_hours_ww_1, 32_hours_ww_2}, mennyire előnyös a dolgozók számára és
+    a cégek ahol kiprobálták megvoltak elégedve az eredményekkel. Azonban a képviselők vagy maguk is cégtulajdonosok
+    vagy közel állnak több cégvezetőhöz a kampányuk vagy a családjuk révén. Angliában az újonnan választott
+    munkáspárt megpróbálta bevezetni a 4 napos munkahetet, de megtartották a 40 órát, így az embereknek 10 órát
+    kell naponta dolgozniuk. Úgy látszik a hegytetőről mindig úgy tűnik, hogy a hangyák nem dolgoznak elég
+    szorgalmasan.
+
+    \item \textbf{Az átlag ember túl ostoba, hogy megértse a politikát és helyes döntést hozzon.} Sajnos az
+    átlagember a legjobb amink van. A képviselők is csak átlag emberek. Gyakran rosszabbak is az átlag embernél.
+    A legtöbbjük multimilliomos és már megvan mindenük, amire csak szükségük lehet. Sokan soha nem dolgoztak
+    valódi munkahelyen, vagy csak kapcsolatok révén jutottak álláshoz, az első lakásukat pedig a szüleik vették,
+    és soha nem kellett kilépniük a saját közegükből.
+
+    \item \textbf{Néhány őrült rossz törvényeket fog hozni.} Ez miben lenne más, mint a mostani rendszer?
+    A közvetlen demokráciában is hozhatnak rossz döntéseket, de ezeket a többségnek mindenképpen el kell
+    fogadnia. Azonban a jelenlegi rendszerrel ellentétben, nem kell majd négy évet várnunk, hogy meggondoljuk
+    magunkat. Egy láthatóan nem működő törvény gyorsan módosítható vagy visszavonható lesz ebben az új rendszerben.
+    Továbbá a döntés hozói és elszenvedői ugyan azok lesznek, ami sokat segíthet egy rossz döntés visszavonásában.
+
+    \item \textbf{Soha nem fogunk majd semmit megvalósítani.} Mit tudunk megvalósítani most? Leszámítva a
+    közszolgáltatások költségvetésének csökkentését és a politikusok fizetésének megemelését? A második
+    világháború után a kormány egész lakóparkokat épített, és a közszolgáltatások működtek. Mi volt a
+    legnagyobb projekt amit a kormány az utóbbi 25 évben véghez vitt? A képvisleők mindig találnak időt,
+    hogy magukon segítsenek, de valahogy az egészségügy rendbehozatalára mindig kell még négy év. Az új
+    rendszerben sokkal gyorsabban fogunk haladni, mert könnyebb meggyőzni 1 millió embert valamiről ami
+    előnyös számukra, mint 300-at valamiről, ami árt a pénztárcájuknak.
+    
+    Emellett más szabályokat is be lehet vezetni, hogy a rendszer gyorsan működjön. Például szabhatnánk
+    egy 7 napos határidőt minden javaslatra. Ha az emberek nem jutnak konszenzusra ez idő alatt, a képviselő
+    beletása szerint szavazhat.
+    
+    Azonban az emberek a kezükbe akarják venni az irányítást, és erre nincs jobb annál, mint amikor mi
+    magunk alkotjuk a szabályokat, amelyek szerint élünk. Ha a demokráciában való részvételt könnyűvé
+    tesszük, az emberek részt fognak venni. Az internet erre kiváló eszköz. Végül is ha valamire, arra
+    kiváló, hogy az emberek kinyilvánítsák a véleményüket rajta.
+
+    \item \textbf{Civilek nem tudnak törvényt alkotni.} A politikusok sem. A törvényeket többnyire
+    jogászok, köztisztviselők, tanácsadók, cégek, lobbicsoportok vagy más érintettek írják a politikus
+    körül. Sok országban további lépések biztosítják, hogy a megfogalmazás világos legyen és megfeleljen
+    az  alkotmánynak. A lényeg, hogy a törvényeket ritkán írja egyetlen ember --- és ez így van jól.
+    Civilek is együtt tudnak dolgozni a segíteni hajlandó szakértőkkel, és így a jogszabályt addig
+    lehet formálni, amíg jól megfogalmazott és elfogadható nem lesz.
+    
+    Valamilyen módon hatnunk kell a kormányra és minden tisztelettel, a tüntetések nem működnek. Olyan
+    emberekre van szükség, akik leülnek, lépésről lépésre kidolgozzák a jogszabályokat, gondoskodnak róla,
+    hogy a változás hatékony és igazságos legyen, majd keresztülviszik azt a politikusokon és
+    a milliárdosokon. Ez a rendszer ezt lehetővé teszi ezt.
+\end{enumerate}
+
+Ezzel az új rendszerrel olyan lehetőségek tárulnak fel az átlag polgár előtt, ami eddig a kivételesek
+számára volt csak elérhető. Humanista csoportok tucatjai kezdhetnek saját előterjesztéseket írni és ha
+a többség kegyét megnyerik törvényeket alkotni belőlük. A következő lista olyan előterjesztéseket
+tartalmaz, amik érdekesek lehetnek az átlag polgár számára és jó eséllyel a többségi támogatást is
+megszereznék. Azonban ez a mozgalom nem támogatja ezeket hivatalosan, azon egyszerű oknél fogva, hogy
+a dirket demokrácia egyetlen célja, hogy erőt adjon az átlag ember kezébe és nem az, hogy megmondja
+mit tegyen az illető újdonsult erejével. Ennek ellenére, ezek az ötletek érdekesek lehetnek, ha másért
+nem is azért, hogy elindítson egy beszélgetést arról milyen változásokra lenne szükség az országban:
+
+\begin{itemize}
+
+    \item \textbf{Otthoni Munkavégzés}\cite{work_from_home}: a Covid világjárvány megmutatta, hogy a
+    legtöbb irodai munka elvégezhető távolról. Ez a törvény nem kerül semmibe a korménynak mégis
+    rengeteg, azonnal érezhető előnye van:
+        \begin{enumerate}
+            \item Javítja a városok levegőminőségét, mivel kevesebb embernek kell ingáznia.
+            
+            \item Enyhíti a lakhatási válságot, mert az emberek elköltözhetnek a városból anélkül,
+            hogy elveszítenék az állásukat.
+
+            \item Csökkenti a zajt a nagyvárosokban, mivel kevesebb járműre van szükség a mindennapokban.
+
+            \item Támogatja az autómentes infrastruktúrát, hiszen kevesebb autó kevesebb helyet foglal.
+
+            \item A parkolóhelyek iránti kisebb igény felszabadít területeket lakóházak, parkok vagy más
+            városi szükségletek számára.
+
+            \item Még azok is profitálnak belőle, akik továbbra is bejárnak: alacsonyabb bérleti díjak,
+            kevesebb forgalom és tisztább levegő várja őket.
+
+            \item Életrekelti az elnéptelenedő kisvárosokat, mivel azon dolgozók akik csendesebb életre
+            vágynak elköltözhetnek a fővárosból anélkül, hogy elvesztenék a munkájukat.
+        \end{enumerate}
+    
+    \item \textbf{4 Napos Munkahét}: ahogy korábban említettük egy 32 órás munkahétnek is rengeteg előnye
+    lenne és ennek megvalósításához sem szükséges számottevő állami erőforrás:
+        \begin{enumerate}
+            \item Csökkenti a munkahelyi stresszt.
+
+            \item Egyes esetekben javítja a munkahelyi tejlesítményt.
+
+            \item Több időt biztosít a polgároknak saját érdeklődéseikre.
+        \end{enumerate}
+    
+    \item \textbf{Lakhatási és Közlekedési Hivatal}: különösen sokat tudna segíteni a fiataloknak
+    vagy a lakhatással küzdőknek. Ez egy lakhatási és közlekedési ügynökség létrehozása lenne. Ez
+    a kormányzati ügynökség ott építene lakásokat és tömegközlekedést, ahol szükség van rájuk, egészen
+    addig, amíg mindenki, aki szeretne, tud bérelni. A bérleti díjat egyetlen bérlő fizetésének 25\%-ában
+    kellene meghatározni --- jóval a 35\%-os EU-us ajánlás alatt, és messze a majdnem 50\% alatt, amit
+    sokan ma fizetnek. A kormány a beszedett bérleti díjat felhasználhatná a közösségi lakások fenntartására
+    és bővítésére. Ezeket a lakóprojekteket tömegközlekedéssel kell összekötni, ezért az ügynökségnek
+    felhatalmazást kellene kapnia közlekedési infrastruktúra építésére is. Létfontosságú, hogy az ügynökség
+    ezeket a projekteket közvetlenül irányítsa, ne pedig alvállalkozók seregén keresztül, mivel utóbbi esetben
+    az ár többszörösét kell majd az ügynökségnek kifizetnie. Bécs bebizonyította mennyi előnnyel jár, ha a
+    kormány segít a polgárainak megélni, de itt van néhány:
+        \begin{enumerate}
+            \item Csökkenti a piacon lévő albérletek árát és a lakbéreket.
+
+            \item Az átlag embernek több jövedelme marad, amit kedve szerint költhet el, ami segíti a gazdaságot.
+
+            \item A kormánynak lehetősége lesz ténylegesen segíteni az embereknek egy gazdasági válság vagy a
+            következő világjárvány esetén. Például úgy, hogy nem gyűjti be lakbért azoktól, akik elvesztették
+            a munkájukat a válság alatt.
+
+            \item Csökkenti az egyenlőtlenségeket a társadalomban, azáltal, hogy a kormány talpra tudja állítani
+            a rászorulókat. Például biztosíthat lakhatást hajléktalanoknak, amíg munkát találnak, vagy otthonról
+            elzavart LMBTQ fiataloknak.
+        \end{enumerate}
+\end{itemize}
+
+\subsection{Útmutatás Valódi Rendszerváltáshoz}
+
+A fakultatív közvetlen demokrácia szépsége, hogy ellentétben sok egyéb ötlettel ami jól hangzik elméletben,
+de nincs egyértelmű út a megvalósításához, ezt viszonylag könnyű elérni. Ugyan rengeteg polgárt meg kell
+győzni, elég őket arról meggyőzni, hogy vegyék saját kezükben az irányítást ahelyett, hogy átruháznák
+azt a következő négy évre. Ennél fogva, a választók egy széles köre megszólítható. A terv néhány pontban
+leírható:
+\begin{enumerate}
+    \item A lehető legtöbb ember meggyőzése --- a politikai nézetektől függetlenül --- egy adott
+    választókerületben, majd kapcsolatfelvétel egy megbízható képviselővel vagy jelöltel. Ha nincs
+    ilyen egy független delegálása. A választott egyén egyetlen dolga, hogy a készre kapott
+    törvénymódosításra szavazzon, ami lehetővé teszi majd a közvetlen demokráciát.
+
+    \item Ismételjük meg ezt minden választókerületre.
+
+\end{enumerate}
+
+Azonban, hogy a változás ténylegesen megtörténhessen szükség van önkéntesekre. Jogászokra, média szakértőkre,
+vagy egy olyan csoporthoz tartozókra, akiket eddig elhnyagolt a politika. Részletek ezen a linken:
+https://www.facebook.com/groups/1429998928614117/permalink/1430000145280662/
