@@ -1,5 +1,5 @@
   textWrapOptions:
-    columns: 90
+    columns: 100
     multipleSpacesToSingle: 1
     removeBlockLineBreaks: 1
     when: before                        # before/after
