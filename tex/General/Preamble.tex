@@ -46,9 +46,9 @@
 % Defines a command used by tikz to calculate some coordinates for the front-page
 \makeatletter
 \newcommand{\gettikzxy}[3]{%
-  \tikz@scan@one@point\pgfutil@firstofone#1\relax
-  \edef#2{\the\pgf@x}%
-  \edef#3{\the\pgf@y}%
+	\tikz@scan@one@point\pgfutil@firstofone#1\relax
+	\edef#2{\the\pgf@x}%
+	\edef#3{\the\pgf@y}%
 }
 \makeatother
 

@@ -3,34 +3,34 @@
 
 % Insert course code, name, quartile number and year (or any other subtitle)
 \newcommand\reportsubtitle{
-\today
+	\today
 }
 
 % Insert version number for the document:
 \newcommand\reportversion{
-    Dokument Verzió: \(0.1\)
+	Dokument Verzió: \(0.1\)
 }
 
 % Add your group number (for DBL) or any other text.
 \newcommand\groupnumber{
-\textbf{Authors}
+	\textbf{Authors}
 }
 
 % Insert authors and student numbers here
 \newcommand\reportauthors{
-First name & Second name \\
-Copy me & Copy me \\
+	First name & Second name \\
+	Copy me & Copy me \\
 }
 
 % Add insert picture command
 \newcommand{\insertPic}[3]
 {   %name, size, caption 
-        \begin{figure}[!htbp]
-        \captionsetup{width=0.95\textwidth}
-        \centering	
-        \includegraphics[scale=#2]{Figures/#1}
-        \caption{#3}\label{fig:#1}
-        \end{figure}		
+	\begin{figure}[!htbp]
+		\captionsetup{width=0.95\textwidth}
+		\centering
+		\includegraphics[scale=#2]{Figures/#1}
+		\caption{#3}\label{fig:#1}
+	\end{figure}
 }
 
 % Define main-color (color of the TU/e logo). Can be changed to drastically change the look of the template
@@ -42,11 +42,11 @@ Copy me & Copy me \\
 
 % Sets up hyperlinks in the document to be colored
 \hypersetup{
-    colorlinks=true,
-    linkcolor=main-color,
-    urlcolor=main-color,
-    citecolor = main-color
-    }
+	colorlinks=true,
+	linkcolor=main-color,
+	urlcolor=main-color,
+	citecolor = main-color
+}
 \urlstyle{same} % Defines settings for link and reference formatting
 
 
@@ -87,7 +87,7 @@ Copy me & Copy me \\
 \DeclareCaptionFont{main-color}{\color{main-color}}
 \captionsetup{labelfont={main-color,bf}}
 
- % Changes font to mlmodern
+% Changes font to mlmodern
 \usepackage{mlmodern}
 
 % Removes indent when starting a new paragraph

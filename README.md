@@ -18,3 +18,13 @@ Fix linting and formatting for the python script:
 ruff check --select I --fix
 ruff format
 ```
+
+Format latex files:
+```shell
+latexindent -w -s -l=formatting.yaml tex/General/Settings.tex
+```
+
+Format line breaks:
+```shell
+fmt -w 100 tex/Chapters/apathy.tex
+```
