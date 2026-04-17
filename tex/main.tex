@@ -9,8 +9,9 @@
 \newpage
 
 % Generates a ToC without page number
-{\hypersetup{linkcolor=black} % Keeps the ToC black even with non-black linkcolor
-\tableofcontents\thispagestyle{empty}}
+% Keeps the ToC black even with non-black linkcolor
+{\hypersetup{linkcolor=black} \tableofcontents\thispagestyle{empty}}
+{\hypersetup{linkcolor=black} \listoffigures\thispagestyle{empty}}
 \newpage
 
 % Contents
@@ -20,10 +21,10 @@
 \input{Chapters/dir_dem}
 
 
-% Creates references using the Biblatex 
+% Creates references using the Biblatex
+\newpage
 \bibliographystyle{plain}
 \bibliography{General/References.bib}
-\newpage
 
 % Any section after this command will have a letter as an index
 \appendix 

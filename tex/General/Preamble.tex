@@ -6,6 +6,8 @@
 
 % inputenc, lipsum, booktabs, geometry and microtype are not required, but nice to have.
 
+\usepackage[magyar]{babel} % For Hungarian language support.
+
 \usepackage[utf8]{inputenc} % Allows the use of some special characters
 \usepackage{amsmath, amsthm, amssymb, amsfonts} % Nicer mathematical typesetting
 \usepackage{lipsum} % Creates dummy text lorem ipsum to showcase typsetting 
@@ -29,8 +31,17 @@
 \usepackage[shortlabels]{enumitem} % Adds additional customization for itemize. 
 
 \usepackage{hyperref} % Allows links and makes references and the ToC clickable
-\usepackage[noabbrev, capitalise]{cleveref} % Easier referencing using \cref{<label>} instead of \ref{}
 \usepackage{booktabs} % For fancy tables.
+
+\usepackage[noabbrev, capitalise]{cleveref} % Easier referencing using \cref{<label>} instead of \ref{}
+\crefname{figure}{ábra}{ábrák}
+\Crefname{figure}{Ábra}{Ábrák}
+\crefname{table}{táblázat}{táblázatok}
+\Crefname{table}{Táblázat}{Táblázatok}
+\crefname{section}{fejezet}{fejezetek}
+\Crefname{section}{Fejezet}{Fejezetek}
+\crefname{equation}{egyenlet}{egyenletek}
+\Crefname{equation}{Egyenlet}{Egyenletek}
 
 \usepackage{xcolor} % Predefines additional colors and allows user defined colors
 
@@ -40,7 +51,7 @@
 
 \usepackage{csquotes} % Better looking quotes.
 \usepackage{t1enc} % For the figures.
-\usepackage[magyar]{babel} % For Hungarian language support.
+
 
 
 % Defines a command used by tikz to calculate some coordinates for the front-page
