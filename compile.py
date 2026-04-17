@@ -55,6 +55,7 @@ def clean() -> None:
         os.path.join(FOLDER, f"{OUT}.toc"),
         os.path.join(FOLDER, f"{OUT}.blg"),
         os.path.join(FOLDER, f"{OUT}.bbl"),
+        os.path.join(FOLDER, f"{OUT}.lof"),
     ]
 
     for path in paths:
