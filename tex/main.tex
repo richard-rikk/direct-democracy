@@ -11,7 +11,6 @@
 % Generates a ToC without page number
 % Keeps the ToC black even with non-black linkcolor
 {\hypersetup{linkcolor=black} \tableofcontents\thispagestyle{empty}}
-{\hypersetup{linkcolor=black} \listoffigures\thispagestyle{empty}}
 \newpage
 
 % Contents
@@ -25,6 +24,10 @@
 \newpage
 \bibliographystyle{plain}
 \bibliography{General/References.bib}
+
+% Generates list of figures.
+\newpage
+{\hypersetup{linkcolor=black} \listoffigures\thispagestyle{empty}}
 
 % Any section after this command will have a letter as an index
 \appendix 
